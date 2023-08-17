@@ -72,7 +72,7 @@ int mini_battle(){
     //battle
 
     //player's attack
-    while (monster_HP > 0 || player_HP > 0)
+    while (monster_HP > 0 && player_HP > 0)
 
         while (monster_HP > 0) {
             cout << "\n________________________________________________" <<endl;
@@ -175,6 +175,7 @@ int mini_battle(){
     if (monster_HP <= 0) {
         cout << "\nThe monster has been defeated!" << endl;
     }
+    
     else if (player_HP <= 0){
         cout << "\nThe Arcane Witch has been defeated!" << endl;
     }
